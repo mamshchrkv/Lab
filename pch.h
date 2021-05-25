@@ -8,9 +8,4 @@
 #define PCH_H
 
 // Добавьте сюда заголовочные файлы для предварительной компиляции
-#include <stdio.h>
-#include <stdlib.h>
-#include "../Lab_1_Lib/VectorFunction.h"
-#include "../Lab_1_Lib/PolynomialFunction.h"
-
 #endif //PCH_H

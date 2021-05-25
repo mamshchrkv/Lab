@@ -3,3 +3,8 @@
 #include "pch.h"
 
 // При использовании предварительно скомпилированных заголовочных файлов необходим следующий файл исходного кода для выполнения сборки.
+#include <stdio.h>
+#include <stdlib.h>
+#include"../Lab2/Line.h"
+#include"../Lab2/Polinom.h"
+#include"../Lab2/Sequence.h"
