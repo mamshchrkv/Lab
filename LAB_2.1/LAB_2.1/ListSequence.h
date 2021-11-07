@@ -9,12 +9,16 @@ private:
     LinkedList<T> items;
 
 public:
-    //Constructors
-    ListSequence() : items() {}
+    ListSequence() {
+        items = LinkedList<T>();
+    }
 
-    ListSequence(T* list, int size) : items(list, size) {}
+    ListSequence(T* list, int size) {
+        items = LinkedList<T>(list, size);
+    }
 
-    ListSequence(const ListSequence<T>& list) : items() {
+    ListSequence(const ListSequence<T>& list) {
+        items = LinkedList<T>();
         for (int i = 0; i < list.GetSize(); i++)
             items.Append(list.Get(i));
     }
@@ -86,6 +90,5 @@ public:
         return new_items;
     }
 
-    //Destructor
     virtual ~ListSequence<T>() = default;
 };
