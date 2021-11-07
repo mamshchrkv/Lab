@@ -15,7 +15,7 @@ void time_array_int() {
         int* array = makeSeq<int>(i);
         ArraySequence<int> a(array, i);
         ArraySequence<int> b(array, i);
-        ArraySequence<int> ñ(array, i);
+        ArraySequence<int> Ã±(array, i);
         ShakerSorter<int> shaker;
         InsertionSorter<int> ins;
         ShellSorter<int> shell;
@@ -31,7 +31,7 @@ void time_array_int() {
         ins.sort(pointer);
         double end_time1 = clock();
         //cout << "Time InsertionSort: " << (end_time1 - start_time1) << endl
-        pointer = &ñ;
+        pointer = &Ã±;
         double start_time2 = clock();
         shell.sort(pointer);
         unsigned int end_time2 = clock();
@@ -53,7 +53,7 @@ void time_array_float() {
         float* array = makeSeq<float>(i);
         ArraySequence<float> a(array, i);
         ArraySequence<float> b(array, i);
-        ArraySequence<float> ñ(array, i);
+        ArraySequence<float> Ã±(array, i);
         ShakerSorter<float> shaker;
         InsertionSorter<float> ins;
         ShellSorter<float> shell;
@@ -69,7 +69,7 @@ void time_array_float() {
         ins.sort(pointer);
         unsigned int end_time1 = clock();
         //cout << "Time InsertionSort: " << (end_time1 - start_time1) << endl
-        pointer = &ñ;
+        pointer = &Ã±;
         unsigned int start_time2 = clock();
         shell.sort(pointer);
         unsigned int end_time2 = clock();
@@ -91,7 +91,7 @@ void time_list_int() {
         int* array = makeSeq<int>(i);
         ListSequence<int> a(array, i);
         ListSequence<int> b(array, i);
-        ListSequence<int> ñ(array, i);
+        ListSequence<int> Ã±(array, i);
         ShakerSorter<int> shaker;
         InsertionSorter<int> ins;
         ShellSorter<int> shell;
@@ -107,7 +107,7 @@ void time_list_int() {
         ins.sort(pointer);
         unsigned int end_time1 = clock();
         //cout << "Time InsertionSort: " << (end_time1 - start_time1) << endl
-        pointer = &ñ;
+        pointer = &Ã±;
         unsigned int start_time2 = clock();
         shell.sort(pointer);
         unsigned int end_time2 = clock();
@@ -129,7 +129,7 @@ void time_list_float() {
         float* array = makeSeq<float>(i);
         ListSequence<float> a(array, i);
         ListSequence<float> b(array, i);
-        ListSequence<float> ñ(array, i);
+        ListSequence<float> Ã±(array, i);
         ShakerSorter<float> shaker;
         InsertionSorter<float> ins;
         ShellSorter<float> shell;
@@ -145,7 +145,7 @@ void time_list_float() {
         ins.sort(pointer);
         unsigned int end_time1 = clock();
         //cout << "Time InsertionSort: " << (end_time1 - start_time1) << endl
-        pointer = &ñ;
+        pointer = &Ã±;
         unsigned int start_time2 = clock();
         shell.sort(pointer);
         unsigned int end_time2 = clock();
@@ -161,7 +161,7 @@ void time_list_float() {
     }
 }
 
-void time_array_int_sort() {
+/*void time_array_int_sort() {
 
     for (int i = 500; i < 20001; i = i + 500) {
         int* array = makeSeq<int>(i);
