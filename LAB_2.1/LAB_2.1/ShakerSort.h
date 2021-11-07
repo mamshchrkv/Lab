@@ -2,7 +2,7 @@
 #include "ArraySequence.h"
 
 template<typename T>
-void swapEl(Sequence<T>* c, int i)
+void swap(Sequence<T>* c, int i)
 {
     T buff;
     buff = (*c)[i];
@@ -10,7 +10,6 @@ void swapEl(Sequence<T>* c, int i)
     (*c)[i - 1] = buff;
 }
 
-//ф-ция "шейкер"-сортировки
 template<typename T>
 void ShakerSort(Sequence<T>* c)
 {
@@ -19,12 +18,12 @@ void ShakerSort(Sequence<T>* c)
     while (leftMark <= rightMark)
     {
         for (int i = rightMark; i >= leftMark; i--)
-            if ((*c)[i - 1] > (*c)[i]) swapEl(c, i);
+            if ((*c)[i - 1] > (*c)[i]) swap(c, i);
         leftMark++;
 
 
         for (int i = leftMark; i <= rightMark; i++)
-            if ((*c)[i - 1] > (*c)[i]) swapEl(c, i);
+            if ((*c)[i - 1] > (*c)[i]) swap(c, i);
         rightMark--;
     }
 }
