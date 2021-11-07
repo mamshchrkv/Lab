@@ -3,17 +3,17 @@
 using namespace std;
 template<typename T>
 
-void InsertionSort(Sequence<T>* c) // сортировка вставками
+void InsertionSort(Sequence<T>* c) 
 {
-    T temp; // временная переменная для хранения значения элемента сортируемого массива
-    int item; // индекс предыдущего элемента
+    T temp; 
+    int item; 
     for (int i = 1; i < c->GetSize(); i++)
     {
-        temp = (*c)[i]; // инициализируем временную переменную текущим значением элемента массива
-        item = i - 1; // запоминаем индекс предыдущего элемента массива
-        while (item >= 0 && (*c)[item] > temp) // пока индекс не равен 0 и предыдущий элемент массива больше текущего
+        temp = (*c)[i]; 
+        item = i - 1; 
+        while (item >= 0 && (*c)[item] > temp) 
         {
-            (*c)[item + 1] = (*c)[item]; // перестановка элементов массива
+            (*c)[item + 1] = (*c)[item]; 
             (*c)[item] = temp;
             item--;
         }
