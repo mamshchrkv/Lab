@@ -7,17 +7,20 @@ private:
     DynamicArray<T> items;
 
 public:
-    //Constructors
-    ArraySequence() : items() {}
+    ArraySequence() {
+        items = DynamicArray<T>();
+    }
 
-    ArraySequence(T* list, int size) : items(list, size) {}
+    ArraySequence(T* list, int size) {
+        items = DynamicArray<T>(list, size);
+    }
 
-    ArraySequence(const ArraySequence<T>& list) : items() {
+    ArraySequence(const ArraySequence<T>& list) {
+        items = DynamicArray<T>();
         for (int i = 0; i < list.GetSize(); i++)
             Append(list.Get(i));
     }
-
-    //Operations
+    
     int GetSize() const override {
         return items.GetSize();
     }
@@ -107,7 +110,6 @@ public:
         return new_items;
     }
 
-    //Destructor
     virtual ~ArraySequence<T>() = default;
 
 };
