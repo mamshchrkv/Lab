@@ -9,21 +9,15 @@ private:
     LinkedList<T> items;
 
 public:
-    ListSequence() {
-        items = LinkedList<T>();
-    }
+    ListSequence() : items() {}
 
-    ListSequence(T* list, int size) {
-        items = LinkedList<T>(list, size);
-    }
+    ListSequence(T* list, int size) : items(list, size) {}
 
-    ListSequence(const ListSequence<T>& list) {
-        items = LinkedList<T>();
+    ListSequence(const ListSequence<T>& list) : items() {
         for (int i = 0; i < list.GetSize(); i++)
             items.Append(list.Get(i));
     }
-
-    //Operations
+    
     int GetSize() const override {
         return items.GetSize();
     }
