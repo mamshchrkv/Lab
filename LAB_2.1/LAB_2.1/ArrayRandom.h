@@ -1,6 +1,6 @@
 #pragma once
 #include "ISorter.h"
-#include "makeSeqHelp.h"
+#include "SequenceMake.h"
 
 void arrayrandom() {
     Sequence<int>* pointer;
@@ -15,7 +15,7 @@ void arrayrandom() {
         cout << endl << "Input dimension:" << endl;
         int dimension;
         cin >> dimension;
-        int* array = makeSeq<int>(dimension);
+        int* array = makeSequenceRand<int>(dimension);
         ArraySequence<int> a(array, dimension);
         cout << endl << "Choose Sort:" << endl;
         cout << "1.ShakerSort\n2.InsertionSort\n3.ShellSort\n4. Back" << endl;
@@ -69,7 +69,7 @@ void arrayrandom() {
         int dimension;
         cin >> dimension;
         cout << "\n";
-        float* array = makeSeq<float>(dimension);
+        float* array = makeSequenceRand<float>(dimension);
         ArraySequence<float> a(array, dimension);
         cout << endl << "Choose Sort:" << endl;
         cout << "1.ShakerSort\n2.InsertionSort\n3.ShellSort\n4.Back" << endl;
