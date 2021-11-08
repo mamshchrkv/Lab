@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ISorter.h"
-#include "makeSeqHelp.h"
+#include "SequenceMake.h"
 
 void arrayuser() {
     int t = 0;
