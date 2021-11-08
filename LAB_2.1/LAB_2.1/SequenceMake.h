@@ -1,6 +1,6 @@
 #pragma once
 template<typename T>
-T* makeSeq(int dimension) {
+T* makeSequenceRand(int dimension) {
     srand(500);
     T* memory = new T[dimension];
     for (int i = 0; i < dimension; i++) {
@@ -16,23 +16,6 @@ T* makeSequence(int dimension) {
         T el;
         cin >> el;
         memory[i] = el;
-    }
-    return memory;
-}
-
-template<typename T>
-T* makeSortedSequence(int dimension) {
-    T* memory = new T[dimension];
-    for (int i = 0; i < dimension; i++) {
-        memory[i] = dimension - i;
-    }
-    return memory;
-}
-template<typename T>
-T* makeEqualSequence(int dimension) {
-    T* memory = new T[dimension];
-    for (int i = 0; i < dimension; i++) {
-        memory[i] = 4;
     }
     return memory;
 }
