@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ISorter.h"
-#include "makeSeqHelp.h"
+#include "SequenceMake.h"
 
 void listrandom() {
     Sequence<int>* pointer;
@@ -16,7 +16,7 @@ void listrandom() {
         cout << endl << "Input dimension:" << endl;
         int dimension;
         cin >> dimension;
-        int* array = makeSeq<int>(dimension);
+        int* array = makeSequenceRand<int>(dimension);
         ListSequence<int> a(array, dimension);
         cout << endl << "Choose Sort:" << endl;
         cout << "1.ShakerSort\n2.InsertionSort\n3.ShellSort\n4.Back" << endl;
@@ -68,7 +68,7 @@ void listrandom() {
         cout << "Input dimension:" << "\n";
         int dimension;
         cin >> dimension;
-        float* array = makeSeq<float>(dimension);
+        float* array = makeSequenceRand<float>(dimension);
         ListSequence<float> a(array, dimension);
         cout << endl << "Choose Sort:" << endl;
         cout << "1.ShakerSort\n2.InsertionSort\n3.ShellSort\n4. Back" << endl;
