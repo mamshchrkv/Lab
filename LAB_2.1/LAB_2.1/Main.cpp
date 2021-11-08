@@ -1,13 +1,10 @@
-﻿#pragma once
+#pragma once
 
 #include <iostream>
 #include "ArrayUser.h"
 #include "ArrayRandom.h"
 #include "ListRandom.h"
 #include "ListUser.h"
-#include "ISorter.h"
-#include "InsertionSort.h"
-#include "ShellSort.h"
 
 using namespace std;
 int main() {
@@ -16,6 +13,8 @@ int main() {
         cout << "Choose Type:" << endl;
         cout << "1.Array\n2.List\n3.Exit" << endl;
         cin >> type;
+        if (type!=1 && type != 2 && type != 3)
+            cout << "Incorrect choice! Try again" << endl;
         switch (type) {
         case 1: {
             cout << "Generate random nums ? " << endl;
