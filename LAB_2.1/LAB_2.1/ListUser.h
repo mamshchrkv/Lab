@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ISorter.h"
-#include "makeSeqHelp.h"
+#include "SequenceMake.h"
 
 void listuser() {
     int t = 0;
