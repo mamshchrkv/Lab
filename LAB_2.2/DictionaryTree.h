@@ -52,7 +52,7 @@ public:
     }
 
     void Print() {
-        printTreerev(root, 1);
+        printTreerev(root);
     }
 
     TV Get(TK key) {
@@ -67,11 +67,11 @@ public:
     virtual ~DictionaryTree() = default;
 
 protected:
-    void printTreerev(node<TK, TV>* top, int level) {
+    void printTreerev(node<TK, TV>* top) {
         if (top) {
-            printTreerev(top->lson, level + 1);
+            printTreerev(top->lson);
             cout << top->key <<"[page: "<<top->data <<"]"<< std::endl;
-            printTreerev(top->rson, level + 1);
+            printTreerev(top->rson);
         }
     }
 
