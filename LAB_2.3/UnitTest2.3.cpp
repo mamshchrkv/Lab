@@ -2,8 +2,6 @@
 #include "CppUnitTest.h"
 #include <stdlib.h>
 #include <iostream>
-#include <complex>
-#include <cmath>
 #include"C:\Users\я\source\repos\LAB_2.3\LAB_2.3\Graph.h"
 #include"C:\Users\я\source\repos\LAB_2.3\LAB_2.3\FunctionGraph.h"
 
